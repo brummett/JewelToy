@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F5E756611541FD300EBA4A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F5E756411541FD300EBA4A1 /* Localizable.strings */; };
 		2FD71C5B1153F4F90097DD5D /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD71C4E1153F4F90097DD5D /* Game.m */; };
 		2FD71C5C1153F4F90097DD5D /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD71C501153F4F90097DD5D /* GameController.m */; };
 		2FD71C5D1153F4F90097DD5D /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD71C521153F4F90097DD5D /* GameView.m */; };
@@ -72,6 +73,9 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2F5E756511541FD300EBA4A1 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2F5E756711541FE600EBA4A1 /* German */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2F5E756811541FEE00EBA4A1 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2FD71C4D1153F4F90097DD5D /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		2FD71C4E1153F4F90097DD5D /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		2FD71C4F1153F4F90097DD5D /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
@@ -227,6 +231,7 @@
 				2FD71CC41153F5720097DD5D /* icon.icns */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				2F5E756411541FD300EBA4A1 /* Localizable.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -419,6 +424,7 @@
 				2FD71CC11153F53C0097DD5D /* yes.wav in Resources */,
 				2FD71CC51153F5720097DD5D /* icon.icns in Resources */,
 				2FD71D0211540A0C0097DD5D /* About.xib in Resources */,
+				2F5E756611541FD300EBA4A1 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +455,16 @@
 				089C165DFE840E0CC02AAC07 /* English */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2F5E756411541FD300EBA4A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F5E756511541FD300EBA4A1 /* English */,
+				2F5E756711541FE600EBA4A1 /* German */,
+				2F5E756811541FEE00EBA4A1 /* French */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		2FD71C801153F53C0097DD5D /* InfoPlist.strings */ = {
