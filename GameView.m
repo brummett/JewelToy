@@ -428,7 +428,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 - (void) setHTMLLegend:(NSString *)value
 {
-    NSData		*htmlData = [NSData dataWithBytes:[value cString] length:[value length]];
+    NSData		*htmlData = [NSData dataWithBytes:[value UTF8String] length:[value length]];
     [self setLegend:[[NSAttributedString alloc] initWithHTML:htmlData documentAttributes:NULL]];
 }
 
@@ -439,7 +439,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 - (void) setHTMLHiScoreLegend:(NSString *)value
 {
-    NSData *htmlData = [NSData dataWithBytes:[value cString] length:[value length]];
+    NSData *htmlData = [NSData dataWithBytes:[value UTF8String] length:[value length]];
     [self setHiScoreLegend:[[NSAttributedString alloc] initWithHTML:htmlData documentAttributes:NULL]];
 }
 
