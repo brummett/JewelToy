@@ -76,6 +76,8 @@
 		2F5E756511541FD300EBA4A1 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2F5E756711541FE600EBA4A1 /* German */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2F5E756811541FEE00EBA4A1 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2F5E756A1154228D00EBA4A1 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2F5E756B1154233E00EBA4A1 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Dutch.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2FD71C4D1153F4F90097DD5D /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		2FD71C4E1153F4F90097DD5D /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		2FD71C4F1153F4F90097DD5D /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
@@ -364,6 +366,13 @@
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "JewelToy" */;
 			compatibilityVersion = "Xcode 3.1";
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Dutch,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* JewelToy */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -463,6 +472,8 @@
 				2F5E756511541FD300EBA4A1 /* English */,
 				2F5E756711541FE600EBA4A1 /* German */,
 				2F5E756811541FEE00EBA4A1 /* French */,
+				2F5E756A1154228D00EBA4A1 /* Japanese */,
+				2F5E756B1154233E00EBA4A1 /* Dutch */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
