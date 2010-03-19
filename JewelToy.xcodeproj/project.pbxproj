@@ -59,6 +59,7 @@
 		2FD71CC11153F53C0097DD5D /* yes.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2FD71C951153F53C0097DD5D /* yes.wav */; };
 		2FD71CC51153F5720097DD5D /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2FD71CC41153F5720097DD5D /* icon.icns */; };
 		2FD71CC91153F6390097DD5D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD71CC81153F6390097DD5D /* OpenGL.framework */; };
+		2FD71D0211540A0C0097DD5D /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FD71D0111540A0C0097DD5D /* About.xib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -130,6 +131,7 @@
 		2FD71C951153F53C0097DD5D /* yes.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = yes.wav; sourceTree = "<group>"; };
 		2FD71CC41153F5720097DD5D /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		2FD71CC81153F6390097DD5D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		2FD71D0111540A0C0097DD5D /* About.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = About.xib; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* JewelToy_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JewelToy_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* JewelToy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JewelToy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,13 +201,13 @@
 		29B97314FDCFA39411CA2CEA /* JewelToy */ = {
 			isa = PBXGroup;
 			children = (
-				2FD71CC41153F5720097DD5D /* icon.icns */,
 				2FD71C621153F5050097DD5D /* media */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				2FD71D0111540A0C0097DD5D /* About.xib */,
 			);
 			name = JewelToy;
 			sourceTree = "<group>";
@@ -222,6 +224,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2FD71CC41153F5720097DD5D /* icon.icns */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 			);
@@ -415,6 +418,7 @@
 				2FD71CC01153F53C0097DD5D /* yes.aif in Resources */,
 				2FD71CC11153F53C0097DD5D /* yes.wav in Resources */,
 				2FD71CC51153F5720097DD5D /* icon.icns in Resources */,
+				2FD71D0211540A0C0097DD5D /* About.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,12 +491,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					ppc,
+					i386,
+				);
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = JewelToy_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = JewelToy;
 			};
 			name = Release;
