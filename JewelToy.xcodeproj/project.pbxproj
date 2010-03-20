@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2F5E756611541FD300EBA4A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F5E756411541FD300EBA4A1 /* Localizable.strings */; };
+		2FA82D5411542EC900BD9449 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA82D5211542EC900BD9449 /* Preferences.xib */; };
 		2FD71C5B1153F4F90097DD5D /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD71C4E1153F4F90097DD5D /* Game.m */; };
 		2FD71C5C1153F4F90097DD5D /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD71C501153F4F90097DD5D /* GameController.m */; };
 		2FD71C5D1153F4F90097DD5D /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD71C521153F4F90097DD5D /* GameView.m */; };
@@ -78,6 +79,7 @@
 		2F5E756811541FEE00EBA4A1 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2F5E756A1154228D00EBA4A1 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2F5E756B1154233E00EBA4A1 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Dutch.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2FA82D5311542EC900BD9449 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Preferences.xib; sourceTree = "<group>"; };
 		2FD71C4D1153F4F90097DD5D /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		2FD71C4E1153F4F90097DD5D /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		2FD71C4F1153F4F90097DD5D /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				2FD71D0111540A0C0097DD5D /* About.xib */,
+				2FA82D5211542EC900BD9449 /* Preferences.xib */,
 			);
 			name = JewelToy;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				2FD71CC51153F5720097DD5D /* icon.icns in Resources */,
 				2FD71D0211540A0C0097DD5D /* About.xib in Resources */,
 				2F5E756611541FD300EBA4A1 /* Localizable.strings in Resources */,
+				2FA82D5411542EC900BD9449 /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +482,14 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
+		2FA82D5211542EC900BD9449 /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FA82D5311542EC900BD9449 /* English */,
+			);
+			name = Preferences.xib;
+			sourceTree = "<group>";
+		};
 		2FD71C801153F53C0097DD5D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -518,10 +530,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

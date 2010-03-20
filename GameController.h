@@ -125,6 +125,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 - (void)newBoard2;
 - (void)waitForFirstClick;
 - (void)receiveClickAt:(int)x:(int)y;
+- (void)updateBonusTextFieldWithValue:(int)val;
 - (void)tryMoveSwapping:(int)x1:(int)y1 and:(int)x2:(int)y2;
     // test for threes
 - (void)testForThrees;    
