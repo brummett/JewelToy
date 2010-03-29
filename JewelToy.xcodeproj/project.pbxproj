@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F164F92115FD81200DD7071 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F164F91115FD81200DD7071 /* Preferences.xib */; };
+		2F164F9B115FD98000DD7071 /* 1gemA.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F164F94115FD98000DD7071 /* 1gemA.png */; };
+		2F164F9C115FD98000DD7071 /* 2gemA.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F164F95115FD98000DD7071 /* 2gemA.png */; };
+		2F164F9D115FD98000DD7071 /* 3gemA.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F164F96115FD98000DD7071 /* 3gemA.png */; };
+		2F164F9E115FD98000DD7071 /* 4gemA.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F164F97115FD98000DD7071 /* 4gemA.png */; };
+		2F164F9F115FD98000DD7071 /* 5gemA.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F164F98115FD98000DD7071 /* 5gemA.png */; };
+		2F164FA0115FD98000DD7071 /* 6gemA.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F164F99115FD98000DD7071 /* 6gemA.png */; };
+		2F164FA1115FD98000DD7071 /* 7gemA.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F164F9A115FD98000DD7071 /* 7gemA.png */; };
 		2F5E756611541FD300EBA4A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F5E756411541FD300EBA4A1 /* Localizable.strings */; };
-		2FA82D5411542EC900BD9449 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA82D5211542EC900BD9449 /* Preferences.xib */; };
 		2FD71C5B1153F4F90097DD5D /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD71C4E1153F4F90097DD5D /* Game.m */; };
 		2FD71C5C1153F4F90097DD5D /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD71C501153F4F90097DD5D /* GameController.m */; };
 		2FD71C5D1153F4F90097DD5D /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD71C521153F4F90097DD5D /* GameView.m */; };
@@ -74,12 +81,19 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2F164F8F115FD80B00DD7071 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Preferences.xib; sourceTree = "<group>"; };
+		2F164F94115FD98000DD7071 /* 1gemA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1gemA.png; path = ejc_jt_hack/1gemA.png; sourceTree = "<group>"; };
+		2F164F95115FD98000DD7071 /* 2gemA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2gemA.png; path = ejc_jt_hack/2gemA.png; sourceTree = "<group>"; };
+		2F164F96115FD98000DD7071 /* 3gemA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3gemA.png; path = ejc_jt_hack/3gemA.png; sourceTree = "<group>"; };
+		2F164F97115FD98000DD7071 /* 4gemA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4gemA.png; path = ejc_jt_hack/4gemA.png; sourceTree = "<group>"; };
+		2F164F98115FD98000DD7071 /* 5gemA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 5gemA.png; path = ejc_jt_hack/5gemA.png; sourceTree = "<group>"; };
+		2F164F99115FD98000DD7071 /* 6gemA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 6gemA.png; path = ejc_jt_hack/6gemA.png; sourceTree = "<group>"; };
+		2F164F9A115FD98000DD7071 /* 7gemA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 7gemA.png; path = ejc_jt_hack/7gemA.png; sourceTree = "<group>"; };
 		2F5E756511541FD300EBA4A1 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2F5E756711541FE600EBA4A1 /* German */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2F5E756811541FEE00EBA4A1 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2F5E756A1154228D00EBA4A1 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2F5E756B1154233E00EBA4A1 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Dutch.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2FA82D5311542EC900BD9449 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Preferences.xib; sourceTree = "<group>"; };
 		2FD71C4D1153F4F90097DD5D /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		2FD71C4E1153F4F90097DD5D /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		2FD71C4F1153F4F90097DD5D /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
@@ -209,6 +223,7 @@
 		29B97314FDCFA39411CA2CEA /* JewelToy */ = {
 			isa = PBXGroup;
 			children = (
+				2F164F91115FD81200DD7071 /* Preferences.xib */,
 				2FD71C621153F5050097DD5D /* media */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -216,7 +231,6 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				2FD71D0111540A0C0097DD5D /* About.xib */,
-				2FA82D5211542EC900BD9449 /* Preferences.xib */,
 			);
 			name = JewelToy;
 			sourceTree = "<group>";
@@ -253,6 +267,13 @@
 		2FD71C621153F5050097DD5D /* media */ = {
 			isa = PBXGroup;
 			children = (
+				2F164F94115FD98000DD7071 /* 1gemA.png */,
+				2F164F95115FD98000DD7071 /* 2gemA.png */,
+				2F164F96115FD98000DD7071 /* 3gemA.png */,
+				2F164F97115FD98000DD7071 /* 4gemA.png */,
+				2F164F98115FD98000DD7071 /* 5gemA.png */,
+				2F164F99115FD98000DD7071 /* 6gemA.png */,
+				2F164F9A115FD98000DD7071 /* 7gemA.png */,
 				2FD71C631153F53C0097DD5D /* 1gem.png */,
 				2FD71C641153F53C0097DD5D /* 2gem.png */,
 				2FD71C651153F53C0097DD5D /* 3gem.png */,
@@ -437,7 +458,14 @@
 				2FD71CC51153F5720097DD5D /* icon.icns in Resources */,
 				2FD71D0211540A0C0097DD5D /* About.xib in Resources */,
 				2F5E756611541FD300EBA4A1 /* Localizable.strings in Resources */,
-				2FA82D5411542EC900BD9449 /* Preferences.xib in Resources */,
+				2F164F92115FD81200DD7071 /* Preferences.xib in Resources */,
+				2F164F9B115FD98000DD7071 /* 1gemA.png in Resources */,
+				2F164F9C115FD98000DD7071 /* 2gemA.png in Resources */,
+				2F164F9D115FD98000DD7071 /* 3gemA.png in Resources */,
+				2F164F9E115FD98000DD7071 /* 4gemA.png in Resources */,
+				2F164F9F115FD98000DD7071 /* 5gemA.png in Resources */,
+				2F164FA0115FD98000DD7071 /* 6gemA.png in Resources */,
+				2F164FA1115FD98000DD7071 /* 7gemA.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +498,14 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		2F164F91115FD81200DD7071 /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F164F8F115FD80B00DD7071 /* English */,
+			);
+			name = Preferences.xib;
+			sourceTree = "<group>";
+		};
 		2F5E756411541FD300EBA4A1 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -480,14 +516,6 @@
 				2F5E756B1154233E00EBA4A1 /* Dutch */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		2FA82D5211542EC900BD9449 /* Preferences.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2FA82D5311542EC900BD9449 /* English */,
-			);
-			name = Preferences.xib;
 			sourceTree = "<group>";
 		};
 		2FD71C801153F53C0097DD5D /* InfoPlist.strings */ = {

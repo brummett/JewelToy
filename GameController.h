@@ -46,7 +46,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 {
     IBOutlet NSPanel		*aboutPanel, *prefsPanel;
     IBOutlet GameView		*gameView;
-    IBOutlet NSButton		*prefsStandardGraphicsButton, *prefsAlternateGraphicsButton;
+    IBOutlet NSButtonCell	*prefsStandardGraphicsButton, *prefsAlternateGraphicsButton;
     IBOutlet NSImageView	*prefsAlternateGraphicsImageView;
     IBOutlet NSButton		*prefsCustomBackgroundCheckbox, *prefsSelectFolderButton;
     IBOutlet NSTextField	*prefsCustomBackgroundFolderTextField;
