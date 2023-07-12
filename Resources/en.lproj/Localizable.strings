@@ -1,0 +1,16 @@
+/* English versions of strings used internally */
+
+NoMoreMovesHTML = "<H1><FONT COLOR=#FF0000>No More Moves!</FONT></H1>";
+JewelToyStartHTML = "<H1><FONT COLOR=#FFCC00>JewelToy</FONT><FONT COLOR=#FF0000><SMALL>&copy;2001</SMALL></FONT></H1></CENTER>";
+GameOverHTML = "<H1><FONT COLOR=#FF0000>Game Over!</FONT></H1>";
+EasyHighScoresHTML = "<H1><FONT COLOR=#00FF00>Easy High Scores</FONT></H1>";
+HardHighScoresHTML = "<H1><FONT COLOR=#FFFF00>Hard High Scores</FONT></H1>";
+ToughHighScoresHTML = "<H1><FONT COLOR=#FF0000>Short High Scores</FONT></H1>";
+FreePlayHighScoresHTML = "<H1><FONT COLOR=#FF00FF>Free Play High Scores</FONT></H1>";
+AnonymousName = "anonymous";
+PauseGameMenuItemTitle = "Pause Game";
+ContinueGameMenuItemTitle = "Continue Game";
+MuteGameMenuItemTitle = "Mute Game";
+UnMuteGameMenuItemTitle = "Un-Mute Game";
+PausedHTML = "<H1><FONT COLOR=#FF0000>Paused</FONT></H1>";
+PicturesFolderPath = "~/Pictures";

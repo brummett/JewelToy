@@ -1,6 +1,6 @@
 JewelToy
 
-An OSX-native take on one of the many match-3 games like Bejeweled.
+A macOS-native take on one of the many match-3 games like Bejeweled.
 
 The original code by Giles Williams is available at
 http://www.aegidian.org/jeweltoy/  It was written for OSX 10.2 and
@@ -9,8 +9,7 @@ PowerPC-only, and ran the laptop battery down pretty quickly since it
 had to use the Rosetta emulation.
 
 This code contains only a few fixes required to build cleanly with XCode
-3.1.4 and OSX 10.5, and the Intel-native code doesn't suck down the battery
-power as quickly.
+14 and macOS 10.10 … 13.3, Intel and Arm
 
 As the original, this code is released under the terms of the
 Gnu General Public License (GPL).

@@ -1,0 +1,47 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                abortGame = id; 
+                orderFrontAboutPanel = id; 
+                orderFrontPreferencesPanel = id; 
+                receiveHiScoreName = id; 
+                startNewGame = id; 
+                toggleMute = id; 
+                togglePauseMode = id; 
+            }; 
+            CLASS = GameController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                abortGameButton = id; 
+                abortGameMenuItem = id; 
+                aboutPanel = id; 
+                bonusTextField = id; 
+                easyGameButton = id; 
+                easyGameMenuItem = id; 
+                freePlayMenuItem = id; 
+                gameView = id; 
+                gameWindow = id; 
+                hardGameButton = id; 
+                hardGameMenuItem = id; 
+                hiScorePanel = id; 
+                hiScorePanelNameTextField = id; 
+                hiScorePanelScoreTextField = id; 
+                muteButton = id; 
+                muteMenuItem = id; 
+                pauseGameButton = id; 
+                pauseGameMenuItem = id; 
+                prefsAlternateGraphicsButton = id; 
+                prefsPanel = id; 
+                prefsStandardGraphicsButton = id; 
+                scoreTextField = id; 
+                timerView = id; 
+                toughGameButton = id; 
+                toughGameMenuItem = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
