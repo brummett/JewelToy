@@ -1,0 +1,122 @@
+// Class = "NSMenultem"; title = "Bring All to Front"; ObjectiD = "5";
+"5.title" = "Ramener au premier plan";
+
+// Class = "NSMenultem"; title = "Window"; ObjectiD = "19";
+"19.title" = "Fenetre";
+
+// Class = "NSWindow™; title = "JewelToy"; ObjectID = "21";
+"21.title" = "JewelToy";
+
+// Class = "NSMenultem"; title = "Minimize"; ObjectID = "23";
+"23.title" = "Minimiser";
+
+// Class = "NSMenu": title = "Window™; ObjectID = "24";
+"24.title" = "Window";
+
+// Class = "NSMenu"; title = "MainMenu"; ObjectID = "29";
+"29.title" = "MainMenu";
+
+// Class = "NSMenultem"; title = "JewelToy"; ObjectID = "56";
+"56.title" = "JewelToy";
+
+// Class = "NSMenu"; title = "JewelToy"; ObjectID = "57";
+"57.title" = "JewelToy";
+
+// Class = "NSMenultem", title = "About JewelToy"; ObjectID = "58";
+"58.title" = "A propos de JewelToy";
+
+// Class = "NSMenu"; title = "Game"; ObjectiD= "81";
+"81.title" = "Jouer";
+
+// Class = "NSMenultem"; title = "New Easy Game"; ObjectiD = "82";
+"82.title" = "Nouvelle partie:Facile";
+
+// Class = "NSMenultem"; title = "Game"; ObjectID = "83";
+"83.title" = "Jouer";
+
+// Class = "NSMenultem"; title = "Help"; ObjectID = "103";
+"103.title" = "Aide";
+
+// Class = "NSMenu"; title = "Help"; ObjectID= "106";
+"106.title" = "Aide";
+
+// Class = "NSMenultem"; title = "JewelToy Help"; ObjectID = "111";
+"111. title" = "Aide JewelToy";
+
+// Class = "NSMenultem": title = "Preferences."; ObjectID = "129™;
+"129.title" = "Préférences…";
+
+// Class = "NSMenu"; title = "Services"; ObjectID = "130";
+"130. title" = "Services";
+
+// Class = "NSMenultem"; title = "Services"; ObjectID = "131";
+"131. title" = "Services";
+
+// Class = "NSMenultem"; title = "Hide JewelToy"; ObjectID = "134";
+"134.title" = "Masquer JewelToy";
+
+// Class = "NSMenultem": title = "Quit JewelToy"; ObjectID = "136';
+"136 title" = "Quitter JewelToy";
+
+// Class = "NSMenultem"; title = "Hide Others"; ObjectID = "145";
+"145.title" = "Masquer le reste";
+
+// Class = "NSMenultem"; title = "Show All"; ObjectID = '150";
+"150 title" = "Démasquer tout";
+
+// Class = "NSMenultem"; title = "End Game"; ObjectID = "217";
+"217.title" = "Arreter";
+
+// Class = "NSMenultem": title = "New Hard Game"; ObjectID = '222";
+"222.title" = "Nouvelle partie:Difficile";
+
+// Class ="NSMenultem"; title = "New Tough Game"; ObjectID = "223";
+"223.title" = "Nouvelle partie:Expert";
+
+// Class ="NSWindow™; title = "Your High Score"; ObjectID = "241";
+"241.title" = "Your High Score";
+
+// Class ="NSMenultem", title = "Pause Game"; ObjectID = "261";
+"261.title" = "Stopper";
+
+// Class ="NSMenultem"; title = "Free Play (no timer)"; ObjectID = "262";
+"262.title" = "Jeu libre (sans chrono)";
+
+// Class ="NSMenultem"; title = "Mute Game"; ObjectID = "270";
+"270.title" = "Sans le son";
+
+// Class ="NSMenultem"; title = "Show High Scores"; ObjectID = "281";
+"281.title" = "Meilleurs scores";
+
+// Class ="NSMenultem"; title = "Reset All High Scores"; ObjectID = "287";
+"287.title" = "Initialiser les meilleurs scores";
+
+// Class ="NSButtonCell"; title = "Easy"; ObjectID = "295";
+"295.title" = "Facile";
+
+// Class ="NSButtonCell"; title = "End Game" ObjectID = "296";
+"296.title" = "Arreter";
+
+// Class ="NSButtonCell"; title = "Hard"; ObjectID = "297";
+"297.title" = "Difficile";
+
+// Class ="NSButtonCell"; title = "Short"; ObjectID = "298";
+"298.title" = "Expert";
+
+// Class ="NSTextFieldCell"; title = "x1"; ObjectID = "299";
+"299.title" = "×1";
+
+// Class ="NSButtonCell"; title = "mute"; ObjectID = "301";
+"301. title" = "mute";
+
+// Class ="NSTextFieldCell"; title = "Anonymous". ObjectID = "302".
+"302.title" = "Anonymous";
+
+// Class ="NSTextFieldCell"; title = "you got a"; ObjectID = "304";
+"304.title" = "Vous avez obtenu un des";
+
+// Class ="NSTextFieldCell": title = "High Score!"; ObjectID = "305";
+"305.title" = "Meilleur Score!";
+
+// Class ="NSButtonCell"; title = "OK"; ObjectID = "306".
+"306.title" = "OK";

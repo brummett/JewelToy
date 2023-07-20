@@ -49,11 +49,11 @@
                         </buttonCell>
                         <cells>
                             <column>
-                                <buttonCell type="radio" title="Use standard graphics" imagePosition="left" alignment="left" state="on" inset="2" id="9">
+                                <buttonCell type="radio" title="Use standard graphics" imagePosition="left" alignment="left" lineBreakMode="truncatingHead" state="on" inset="2" id="9">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
-                                <buttonCell type="radio" title="Use alternate graphics" imagePosition="left" alignment="left" tag="1" inset="2" id="8">
+                                <buttonCell type="radio" title="Use alternate graphics" imagePosition="left" alignment="left" lineBreakMode="truncatingHead" tag="1" inset="2" id="8">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -132,7 +132,7 @@
                     </imageView>
                     <button verticalHuggingPriority="750" fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="34">
                         <rect key="frame" x="301" y="19" width="59" height="28"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" inset="2" id="76">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="smallSystem"/>
@@ -163,7 +163,7 @@ DQ
                     </textField>
                     <button fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="53">
                         <rect key="frame" x="17" y="79" width="225" height="18"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="check" title="Use custom backgrounds from folder:" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="79">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="smallSystem"/>
@@ -174,7 +174,7 @@ DQ
                     </button>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="54">
                         <rect key="frame" x="18" y="54" width="336" height="19"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="80">
                             <font key="font" metaFont="smallSystem"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -183,7 +183,7 @@ DQ
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="55">
                         <rect key="frame" x="266" y="74" width="94" height="28"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="push" title="Select Folder" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" inset="2" id="81">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="smallSystem"/>
@@ -197,7 +197,7 @@ DQ
             <connections>
                 <outlet property="delegate" destination="-2" id="36"/>
             </connections>
-            <point key="canvasLocation" x="137" y="150"/>
+            <point key="canvasLocation" x="187" y="129"/>
         </window>
     </objects>
     <resources>

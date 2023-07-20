@@ -18,3 +18,8 @@ Replaced .nibs by .xibs
 • added check for tink and sploink to not play if already playing.
 • discovered that the gem's image ivar isn't used in normal use, but can be with alternate graphics, which I did not test.
 • ScoreBubble sprites weren't being initialized correctly because when the app used OpenGL to request a texture number the wrong OpenGLGraphicContext was current. Fixed.
+
+7/20/2023
+• Mystery: the app works correctly on my M1 Mac Mini, but none of the OpenGL sprites draw on when the same code is compiled and run on other M1 Macs. Why?
+• The non-English localizations were broken. Fixed for French, German, Japanese.
+

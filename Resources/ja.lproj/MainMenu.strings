@@ -1,0 +1,122 @@
+// Class = "NSMenultem"; title = "Bring All to Front"; ObjectiD = "5";
+"5.title" = "すべてを手前に表示";
+
+// Class = "NSMenultem"; title = "Window"; ObjectiD = "19";
+"19.title" = "ウインドウ";
+
+// Class = "NSWindow™; title = "JewelToy"; ObjectID = "21";
+"21.title" = "JewelToy";
+
+// Class = "NSMenultem"; title = "Minimize"; ObjectID = "23";
+"23.title" = "ウインドウをしまう";
+
+// Class = "NSMenu": title = "Window™; ObjectID = "24";
+"24.title" = "ウインドウ";
+
+// Class = "NSMenu"; title = "MainMenu"; ObjectID = "29";
+"29.title" = "MainMenu";
+
+// Class = "NSMenultem"; title = "JewelToy"; ObjectID = "56";
+"56.title" = "JewelToy";
+
+// Class = "NSMenu"; title = "JewelToy"; ObjectID = "57";
+"57.title" = "JewelToy";
+
+// Class = "NSMenultem", title = "About JewelToy"; ObjectID = "58";
+"58.title" = "JewelToy について";
+
+// Class = "NSMenu"; title = "Game"; ObjectiD= "81";
+"81.title" = "ゲーム";
+
+// Class = "NSMenultem"; title = "New Easy Game"; ObjectiD = "82";
+"82.title" = "新規ゲーム「初級」";
+
+// Class = "NSMenultem"; title = "Game"; ObjectID = "83";
+"83.title" = "ゲーム";
+
+// Class = "NSMenultem"; title = "Help"; ObjectID = "103";
+"103.title" = "ヘルプ";
+
+// Class = "NSMenu"; title = "Help"; ObjectID= "106";
+"106.title" = "ヘルプ";
+
+// Class = "NSMenultem"; title = "JewelToy Help"; ObjectID = "111";
+"111. title" = "JewelToy ヘルプ";
+
+// Class = "NSMenultem": title = "Preferences."; ObjectID = "129™;
+"129.title" = "環境設定…";
+
+// Class = "NSMenu"; title = "Services"; ObjectID = "130";
+"130. title" = "サービス";
+
+// Class = "NSMenultem"; title = "Services"; ObjectID = "131";
+"131. title" = "サービス";
+
+// Class = "NSMenultem"; title = "Hide JewelToy"; ObjectID = "134";
+"134.title" = "JewelToy を隠す";
+
+// Class = "NSMenultem": title = "Quit JewelToy"; ObjectID = "136';
+"136 title" = "JewelToy を終了";
+
+// Class = "NSMenultem"; title = "Hide Others"; ObjectID = "145";
+"145.title" = "他を隠す";
+
+// Class = "NSMenultem"; title = "Show All"; ObjectID = '150";
+"150 title" = "すべてを表示";
+
+// Class = "NSMenultem"; title = "End Game"; ObjectID = "217";
+"217.title" = "ゲーム終了";
+
+// Class = "NSMenultem": title = "New Hard Game"; ObjectID = '222";
+"222.title" = "新規ゲーム「中級」";
+
+// Class ="NSMenultem"; title = "New Tough Game"; ObjectID = "223";
+"223.title" = "新規ゲーム「上級」";
+
+// Class ="NSWindow™; title = "Your High Score"; ObjectID = "241";
+"241.title" = "Your High Score";
+
+// Class ="NSMenultem", title = "Pause Game"; ObjectID = "261";
+"261.title" = "ポーズ";
+
+// Class ="NSMenultem"; title = "Free Play (no timer)"; ObjectID = "262";
+"262.title" = "フリープレイ(制限時間なし)";
+
+// Class ="NSMenultem"; title = "Mute Game"; ObjectID = "270";
+"270.title" = "消音";
+
+// Class ="NSMenultem"; title = "Show High Scores"; ObjectID = "281";
+"281.title" = "ハイスコアを表示";
+
+// Class ="NSMenultem"; title = "Reset All High Scores"; ObjectID = "287";
+"287.title" = "ハイスコアをリセット";
+
+// Class ="NSButtonCell"; title = "Easy"; ObjectID = "295";
+"295.title" = "初級";
+
+// Class ="NSButtonCell"; title = "End Game" ObjectID = "296";
+"296.title" = "ゲーム終了";
+
+// Class ="NSButtonCell"; title = "Hard"; ObjectID = "297";
+"297.title" = "中級";
+
+// Class ="NSButtonCell"; title = "Short"; ObjectID = "298";
+"298.title" = "上級";
+
+// Class ="NSTextFieldCell"; title = "x1"; ObjectID = "299";
+"299.title" = "×1";
+
+// Class ="NSButtonCell"; title = "mute"; ObjectID = "301";
+"301. title" = "mute";
+
+// Class ="NSTextFieldCell"; title = "Anonymous". ObjectID = "302".
+"302.title" = "名無しさん";
+
+// Class ="NSTextFieldCell"; title = "you got a"; ObjectID = "304";
+"304.title" = "やったね！！";
+
+// Class ="NSTextFieldCell": title = "High Score!"; ObjectID = "305";
+"305.title" = "ハイスコア！";
+
+// Class ="NSButtonCell"; title = "OK"; ObjectID = "306".
+"306.title" = "OK";

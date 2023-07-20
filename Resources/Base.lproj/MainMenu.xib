@@ -263,6 +263,7 @@
                     </menu>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="-214" y="-493"/>
         </menu>
         <customObject id="206" userLabel="GameController" customClass="GameController">
             <connections>
@@ -356,6 +357,7 @@ DQ
                     </textField>
                 </subviews>
             </view>
+            <point key="canvasLocation" x="-45" y="-306"/>
         </window>
     </objects>
     <resources>
