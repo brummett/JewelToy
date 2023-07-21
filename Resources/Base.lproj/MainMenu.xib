@@ -109,13 +109,13 @@
                             <action selector="toggleMute:" target="206" id="275"/>
                         </connections>
                     </button>
-                    <openGLView wantsLayer="YES" fixedFrame="YES" useAuxiliaryDepthBufferStencil="NO" translatesAutoresizingMaskIntoConstraints="NO" id="290" customClass="GameView">
+                    <customView wantsLayer="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="290" customClass="GameView">
                         <rect key="frame" x="0.0" y="128" width="384" height="384"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <connections>
                             <outlet property="gameController" destination="206" id="292"/>
                         </connections>
-                    </openGLView>
+                    </customView>
                 </subviews>
             </view>
             <connections>

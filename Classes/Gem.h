@@ -44,7 +44,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #define GEM_SPRITE_Z		-0.25
 //
 
-@class	OpenGLSprite;
+@class	Sprite;
 
 @interface Gem : NSObject
 
@@ -52,7 +52,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 - (void) dealloc;
 
 + (Gem *) gemWithNumber:(int) d andImage:(NSImage *)img;
-+ (Gem *) gemWithNumber:(int) d andSprite:(OpenGLSprite *)aSprite;
++ (Gem *) gemWithNumber:(int) d andSprite:(Sprite *)aSprite;
 
 - (int) animate;
 - (void) fade;
@@ -70,8 +70,8 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 - (void) setImage:(NSImage *) value;
 - (void) drawImage;
 
-- (OpenGLSprite *) sprite;
-- (void) setSprite:(OpenGLSprite *) value;
+- (Sprite *) sprite;
+- (void) setSprite:(Sprite *) value;
 - (void) drawSprite;
 
 - (int) state;

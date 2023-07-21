@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		63533E6A0CD3D804002A7B5F /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 63533E620CD3D804002A7B5F /* icon.icns */; };
-		63533EA40CD3D826002A7B5F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63533EA30CD3D826002A7B5F /* OpenGL.framework */; };
 		63533F7A0CD553EF002A7B5F /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 63533F6B0CD553EF002A7B5F /* Game.m */; };
 		63533F7B0CD553EF002A7B5F /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63533F6D0CD553EF002A7B5F /* GameController.m */; };
 		63533F7C0CD553EF002A7B5F /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63533F6F0CD553EF002A7B5F /* GameView.m */; };
 		63533F7D0CD553EF002A7B5F /* Gem.m in Sources */ = {isa = PBXBuildFile; fileRef = 63533F710CD553EF002A7B5F /* Gem.m */; };
 		63533F7F0CD553EF002A7B5F /* MyTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63533F750CD553EF002A7B5F /* MyTimerView.m */; };
-		63533F800CD553EF002A7B5F /* OpenGLSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 63533F770CD553EF002A7B5F /* OpenGLSprite.m */; };
+		63533F800CD553EF002A7B5F /* Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 63533F770CD553EF002A7B5F /* Sprite.m */; };
 		63533F810CD553EF002A7B5F /* ScoreBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = 63533F790CD553EF002A7B5F /* ScoreBubble.m */; };
 		63533F890CD5543A002A7B5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63533F880CD5543A002A7B5F /* main.m */; };
 		63533F960CD55517002A7B5F /* explosion.aif in Resources */ = {isa = PBXBuildFile; fileRef = 63533F910CD55517002A7B5F /* explosion.aif */; };
@@ -86,7 +85,6 @@
 		6332919C2352657B00BA9795 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = Resources/en.lproj/jeweltoy.html; sourceTree = "<group>"; };
 		63533E470CD3D7E0002A7B5F /* gpl2.licence.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = gpl2.licence.txt; path = License/gpl2.licence.txt; sourceTree = "<group>"; };
 		63533E620CD3D804002A7B5F /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = Resources/icon.icns; sourceTree = "<group>"; };
-		63533EA30CD3D826002A7B5F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		63533F6A0CD553EF002A7B5F /* Game.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		63533F6B0CD553EF002A7B5F /* Game.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		63533F6C0CD553EF002A7B5F /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
@@ -97,8 +95,8 @@
 		63533F710CD553EF002A7B5F /* Gem.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Gem.m; sourceTree = "<group>"; };
 		63533F740CD553EF002A7B5F /* MyTimerView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MyTimerView.h; sourceTree = "<group>"; };
 		63533F750CD553EF002A7B5F /* MyTimerView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MyTimerView.m; sourceTree = "<group>"; };
-		63533F760CD553EF002A7B5F /* OpenGLSprite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = OpenGLSprite.h; sourceTree = "<group>"; };
-		63533F770CD553EF002A7B5F /* OpenGLSprite.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = OpenGLSprite.m; sourceTree = "<group>"; };
+		63533F760CD553EF002A7B5F /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
+		63533F770CD553EF002A7B5F /* Sprite.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Sprite.m; sourceTree = "<group>"; };
 		63533F780CD553EF002A7B5F /* ScoreBubble.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ScoreBubble.h; sourceTree = "<group>"; };
 		63533F790CD553EF002A7B5F /* ScoreBubble.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ScoreBubble.m; sourceTree = "<group>"; };
 		63533F880CD5543A002A7B5F /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				63533EA40CD3D826002A7B5F /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +152,6 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				63533EA30CD3D826002A7B5F /* OpenGL.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -244,8 +240,8 @@
 				638A99C01F00A5C1003F23B2 /* ImageUtils.m */,
 				63533F740CD553EF002A7B5F /* MyTimerView.h */,
 				63533F750CD553EF002A7B5F /* MyTimerView.m */,
-				63533F760CD553EF002A7B5F /* OpenGLSprite.h */,
-				63533F770CD553EF002A7B5F /* OpenGLSprite.m */,
+				63533F760CD553EF002A7B5F /* Sprite.h */,
+				63533F770CD553EF002A7B5F /* Sprite.m */,
 				63533F780CD553EF002A7B5F /* ScoreBubble.h */,
 				63533F790CD553EF002A7B5F /* ScoreBubble.m */,
 			);
@@ -412,7 +408,7 @@
 				63533F7C0CD553EF002A7B5F /* GameView.m in Sources */,
 				63533F7D0CD553EF002A7B5F /* Gem.m in Sources */,
 				63533F7F0CD553EF002A7B5F /* MyTimerView.m in Sources */,
-				63533F800CD553EF002A7B5F /* OpenGLSprite.m in Sources */,
+				63533F800CD553EF002A7B5F /* Sprite.m in Sources */,
 				638A99C11F00A5C1003F23B2 /* ImageUtils.m in Sources */,
 				63533F810CD553EF002A7B5F /* ScoreBubble.m in Sources */,
 				63533F890CD5543A002A7B5F /* main.m in Sources */,

@@ -24,14 +24,11 @@
 
 // Open GL
 //
-#import "OpenGLSprite.h"
+#import "Sprite.h"
 //
 #import "ImageUtils.h"
 
 NSMutableDictionary *stringAttributes;
-
-
-static NSOpenGLContext* sContext;
 
 @implementation ScoreBubble {
     int value;
@@ -41,12 +38,8 @@ static NSOpenGLContext* sContext;
 
     // Open GL
     //
-    OpenGLSprite	*sprite;
+    Sprite	*sprite;
     //
-}
-
-+(void)setCurrentContext:(NSOpenGLContext *)context {
-  sContext = context;
 }
 
 +(ScoreBubble *)scoreWithValue:(int)val At:(NSPoint)loc Duration:(int)count
@@ -80,10 +73,9 @@ static NSOpenGLContext* sContext;
 	[str drawAtPoint:NSMakePoint(1,1) withAttributes:stringAttributes];
 	[image unlockFocus];
 
-  [sContext makeCurrentContext];
         // Open GL
         //
-        sprite = [[OpenGLSprite alloc] initWithImage:image
+        sprite = [[Sprite alloc] initWithImage:image
                                        cropRectangle:NSMakeRect(0, 0, [image size].width, [image size].height)
                                                 size:[image size]];
         //

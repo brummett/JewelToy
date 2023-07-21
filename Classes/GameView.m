@@ -20,8 +20,6 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 ----====----====----====----====----====----====----====----====----====---- */
 
 #include <math.h>
-#import <OpenGL/gl.h>
-//#import <OpenGL/glu.h>
 
 #import "GameView.h"
 #import "GameController.h"
@@ -33,41 +31,63 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 //
 #import "ScoreBubble.h"
 //
-// OpenGLSprites
+// Sprite
 //
-#import "OpenGLSprite.h"
+#import "Sprite.h"
 
 
-@implementation GameView
+@implementation GameView {
+    IBOutlet GameController	*gameController;
 
-+ (NSOpenGLPixelFormat *)defaultPixelFormat {
-  NSOpenGLPixelFormatAttribute attrs[] = {
-      NSOpenGLPFADepthSize, 16,
-      NSOpenGLPFAAccelerated,
-      NSOpenGLPFAColorSize, 16,
-      NSOpenGLPFADoubleBuffer,
-      0};
-   return [[[NSOpenGLPixelFormat alloc] initWithAttributes:attrs] autorelease];
+    BOOL			m_glContextInitialized;
+
+    NSColor			*backgroundColor;
+    NSMutableArray		*gemImageArray;
+    NSImage			*backgroundImage;
+    NSImage			*crosshairImage;
+    NSImage			*movehintImage;
+
+    //OpenGLSprites!
+    Sprite		*backgroundSprite, *crosshairSprite, *movehintSprite;
+    NSMutableArray		*gemSpriteArray;
+
+    //backgrounds
+    NSMutableArray		*backgroundImagePathArray;
+
+    id				legend;
+    NSAttributedString		*hiScoreLegend;
+
+    NSImage			*legendImage;
+    Sprite		*legendSprite;
+
+    NSArray			*hiScoreNumbers, *hiScoreNames;
+    int				ticsSinceLastMove, scoreScroll;
+
+    NSPoint			dragStartPoint;
+
+    Game			*game;
+
+    NSDictionary		*docTypeDictionary;
+
+    BOOL			animating, showHighScores, paused, muted, animationStatus, showHint;
 }
-  
+
+
 - (id)initWithFrame:(NSRect)frame {
-    NSOpenGLPixelFormat *pixFmt = [[self class] defaultPixelFormat];
-    self = [super initWithFrame:frame pixelFormat:pixFmt];
+    self = [super initWithFrame:frame];
     [self gameViewInitialize];
     return self;
 }
 
 - (id)initWithCoder:(NSCoder *)coder {
-  self = [super initWithCoder:coder];
-  [self gameViewInitialize];
-  return self;
+    self = [super initWithCoder:coder];
+    [self gameViewInitialize];
+    return self;
 }
 
 - (void)gameViewInitialize {
     //NSData	*tiffData;
 
-
-    m_glContextInitialized = NO;
 
     animating = NO;
     showHighScores = NO;
@@ -108,20 +128,18 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
     crosshairImage = [NSImage imageNamed:@"cross"];
     movehintImage = [NSImage imageNamed:@"movehint"];
 
-    [ScoreBubble setCurrentContext:self.openGLContext];
-
     //////
     //
     // Make the Open GL Sprites!
     //
-    backgroundSprite = [[OpenGLSprite alloc] initWithImage:backgroundImage
+    backgroundSprite = [[Sprite alloc] initWithImage:backgroundImage
                                              cropRectangle:NSMakeRect(0.0, 0.0, [backgroundImage size].width, [backgroundImage size].height)
                                                       size:NSMakeSize(384.0,384.0)];
 
-    crosshairSprite = [[OpenGLSprite alloc] initWithImage:crosshairImage
+    crosshairSprite = [[Sprite alloc] initWithImage:crosshairImage
                                             cropRectangle:NSMakeRect(0.0, 0.0, [crosshairImage size].width, [crosshairImage size].height)
                                                      size:NSMakeSize(48.0,48.0)];
-    movehintSprite = [[OpenGLSprite alloc] initWithImage:movehintImage
+    movehintSprite = [[Sprite alloc] initWithImage:movehintImage
                                            cropRectangle:NSMakeRect(0.0, 0.0, [movehintImage size].width, [movehintImage size].height)
                                                     size:NSMakeSize(48.0,48.0)];
     if (gemSpriteArray)
@@ -130,7 +148,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
     for (i = 0; i < 7; i++)
     {
         NSImage	*image = [gemImageArray objectAtIndex:i];
-        OpenGLSprite *sprite = [[OpenGLSprite alloc] initWithImage:image
+        Sprite *sprite = [[Sprite alloc] initWithImage:image
                                                      cropRectangle:NSMakeRect(0.0, 0.0, [image size].width, [image size].height)
                                                               size:NSMakeSize(48.0,48.0)];
         
@@ -145,7 +163,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
         [[NSColor clearColor] set];
         NSRectFill(NSMakeRect(0,0,384,384));
         [legendImage unlockFocus];
-        legendSprite = [[OpenGLSprite alloc] initWithImage:legendImage
+        legendSprite = [[Sprite alloc] initWithImage:legendImage
                                             cropRectangle:NSMakeRect(0.0, 0.0, [legendImage size].width, [legendImage size].height)
                                                     size:[legendImage size]];
         
@@ -392,7 +410,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
             backgroundImage = [[NSImage alloc] initWithData:tiffData];
         else
             backgroundImage = [NSImage imageNamed:@"background"];
-        backgroundSprite = [[OpenGLSprite alloc] initWithImage:backgroundImage
+        backgroundSprite = [[Sprite alloc] initWithImage:backgroundImage
                                                  cropRectangle:NSMakeRect(0.0, 0.0, [backgroundImage size].width, [backgroundImage size].height)
                                                           size:NSMakeSize(384.0,384.0)];
     }    
@@ -482,41 +500,11 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 - (void)drawRect:(NSRect)rect {
     int i,j;
 
-    // Open GL
-    float	size = 384.0/2.0;	// screenSize/2;
-    float	clearDepth = 1.0;
-
     // try to fix image loading problem
     if (!legendImage)
         [self graphicSetUp];
 
     //////////
-
-    if (!m_glContextInitialized)
-    {
-        glShadeModel(GL_FLAT);
-
-        glMatrixMode(GL_PROJECTION);
-        glLoadIdentity();	// reset matrix
-
-        glFrustum(-1.0, 1.0, -1.0, 1.0, -1.0, 1.0);	// set projection matrix
-        glMatrixMode(GL_MODELVIEW);
-
-        //glEnable(GL_DEPTH_TEST);		// depth buffer
-
-        glEnable(GL_BLEND);			// alpha blending
-        glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);		// alpha blending
-        m_glContextInitialized = YES;
-    }
-
-    glClearColor(0.3, 0.3, 0.3, 0.0);
-    glClearDepth(clearDepth);
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-    glLoadIdentity();	// allows me to resize the window but keep position OK
-
-    glTranslatef(-1.0,-1.0,0.0);
-    glScalef(1/size,1/size,1.0);// scale to screen size and width
 
     if (backgroundSprite)
     {
@@ -565,15 +553,13 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
     {
         if (ticsSinceLastMove > 500)
             [self setLegend:[NSImage imageNamed:@"title"]];	// show Logo
-        if ([legend isKindOfClass:[OpenGLSprite class]])
+        if ([legend isKindOfClass:[Sprite class]])
         {
             //NSLog(@"Blitting legend");
             [legend blitToX:0.0 Y:0.0 Z:-0.75];
         }
     }
   
-    glFlush();
-
 }
 
 - (void) showScores

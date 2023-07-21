@@ -20,47 +20,10 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 ----====----====----====----====----====----====----====----====----====---- */
 
 #import <Cocoa/Cocoa.h>
-#import <OpenGL/gl.h>
 
-@class Game, GameController, OpenGLSprite;
+@class Game, GameController, Sprite;
 
-@interface GameView : NSOpenGLView
-{
- @private
-    IBOutlet GameController	*gameController;
-    
-    BOOL			m_glContextInitialized;
-
-    NSColor			*backgroundColor;
-    NSMutableArray		*gemImageArray;
-    NSImage			*backgroundImage;
-    NSImage			*crosshairImage;
-    NSImage			*movehintImage;
-
-    //OpenGLSprites!
-    OpenGLSprite		*backgroundSprite, *crosshairSprite, *movehintSprite;
-    NSMutableArray		*gemSpriteArray;
-
-    //backgrounds
-    NSMutableArray		*backgroundImagePathArray;
-    
-    id				legend;
-    NSAttributedString		*hiScoreLegend;
-
-    NSImage			*legendImage;
-    OpenGLSprite		*legendSprite;
-    
-    NSArray			*hiScoreNumbers, *hiScoreNames;
-    int				ticsSinceLastMove, scoreScroll;
-    
-    NSPoint			dragStartPoint;
-    
-    Game			*game;
-        
-    NSDictionary		*docTypeDictionary;
-    
-    BOOL			animating, showHighScores, paused, muted, animationStatus, showHint;
-}
+@interface GameView : NSView
 
 - (void) graphicSetUp;
 - (void) loadImageArray;

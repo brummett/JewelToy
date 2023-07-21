@@ -23,7 +23,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #import "Gem.h"
 
 // Open GL
-#import "OpenGLSprite.h"
+#import "Sprite.h"
 //
 #import "ImageUtils.h"
 
@@ -32,7 +32,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
     NSImage	*image;
 
     // Open GL
-    OpenGLSprite	*sprite;
+    Sprite	*sprite;
     //
 
     NSSound	*tink;
@@ -70,7 +70,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
     return result;
 }
 
-+ (Gem *) gemWithNumber:(int) d andSprite:(OpenGLSprite *)aSprite {
++ (Gem *) gemWithNumber:(int) d andSprite:(Sprite *)aSprite {
     Gem	*result = [[[Gem alloc] init] autorelease];
     [result setGemType:d];
     [result setSprite:aSprite];
@@ -213,10 +213,10 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
         [[self image] n_compositeToPoint:[self positionOnScreen] operation:NSCompositingOperationSourceOver];
 }
 
-- (OpenGLSprite *) sprite {
+- (Sprite *) sprite {
     return sprite;
 }
-- (void) setSprite:(OpenGLSprite *) value {
+- (void) setSprite:(Sprite *) value {
     sprite = value;
 }
 - (void) drawSprite {

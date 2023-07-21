@@ -28,10 +28,9 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 //
 
 @class NSOpenGLContext;
-@class	OpenGLSprite;
+@class	Sprite;
 
 @interface ScoreBubble : NSObject
-+(void)setCurrentContext:(NSOpenGLContext *)context;
 +(ScoreBubble *)scoreWithValue:(int)value At:(NSPoint)loc Duration:(int)count;
 
 -(void)drawImage;
