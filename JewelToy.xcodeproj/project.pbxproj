@@ -131,7 +131,7 @@
 		639C36E11F034FCA00BF7EE4 /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		63A68E1123526D1E00F17FF8 /* jeweltoy.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = jeweltoy.entitlements; path = Resources/jeweltoy.entitlements; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* jeweltoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jeweltoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* JewelToy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JewelToy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,12 +168,12 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* jeweltoy.app */,
+				8D1107320486CEB800E47090 /* JewelToy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA /* jeweltoy */ = {
+		29B97314FDCFA39411CA2CEA /* JewelToy */ = {
 			isa = PBXGroup;
 			children = (
 				63533E470CD3D7E0002A7B5F /* gpl2.licence.txt */,
@@ -185,7 +185,7 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
-			name = jeweltoy;
+			name = JewelToy;
 			sourceTree = "<group>";
 		};
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
@@ -315,8 +315,8 @@
 			);
 			name = JewelToy;
 			productInstallPath = "$(HOME)/Applications";
-			productName = jeweltoy;
-			productReference = 8D1107320486CEB800E47090 /* jeweltoy.app */;
+			productName = JewelToy;
+			productReference = 8D1107320486CEB800E47090 /* JewelToy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -342,7 +342,7 @@
 				Base,
 				de,
 			);
-			mainGroup = 29B97314FDCFA39411CA2CEA /* jeweltoy */;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* JewelToy */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -486,7 +486,7 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.jeweltoy;
-				PRODUCT_NAME = jeweltoy;
+				PRODUCT_NAME = JewelToy;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -502,8 +502,8 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = com.turbozen.jeweltoy;
-				PRODUCT_NAME = jeweltoy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.jeweltoy;
+				PRODUCT_NAME = JewelToy;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
