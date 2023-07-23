@@ -27,3 +27,15 @@ Replaced .nibs by .xibs
 • Created git branch classic_opengl with the most recent version of the app that worked on old machines but not on M1 Air.
 • Created git branch appkit that removes OpenGL and just draws using AppKit == Cocoa
 • Set git Master to point to appkit.
+
+7/22/2023
+Also fixed slow running code searching folders for background images. It was so slow,  you'd think the program had crashed.
+If you do a:
+
+git pull
+
+git checkout master ;# gives you the Appkit version
+git checkout classic_opengl  ;# gives you the OpenGL version
+
+Both should work on your Mac. If either doesn't, please let me know.
+
