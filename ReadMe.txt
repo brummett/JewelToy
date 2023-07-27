@@ -28,7 +28,7 @@ Replaced .nibs by .xibs
 • Created git branch appkit that removes OpenGL and just draws using AppKit == Cocoa
 • Set git Master to point to appkit.
 
-7/22/2023
+7/27/2023
 Also fixed slow running code searching folders for background images. It was so slow,  you'd think the program had crashed.
 If you do a:
 
@@ -37,5 +37,7 @@ git pull
 git checkout master ;# gives you the Appkit version
 git checkout classic_opengl  ;# gives you the OpenGL version
 
-Both should work on your Mac. If either doesn't, please let me know.
+The Appkit branch should work on your Mac. I've had reports that the openGL branch just draws
+a gray square on some Macs. I'm trying to track down why it works on some Macs and not others.
+
 
