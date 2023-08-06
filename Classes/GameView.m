@@ -35,18 +35,18 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 //
 #import "Sprite.h"
 
-/// Before macOS 11, fall back to the previous code.
-///
 /// @param path - a filepath string
-/// @return the UTI of the file, based on the file extension, as an NSString. nil if it can't
-static NSString *UTI(NSString *path){
-  NSURL *url = [NSURL fileURLWithPath:path];
-  id uti = nil;
-  if (@available(macOS 11, *)) {
-    [url getResourceValue:&uti forKey:NSURLContentTypeKey error:NULL];
-    return [uti description];
-  }
-  return NSHFSTypeOfFile(path);
+/// @return true if the file extension conforms to an image type file.
+static BOOL IsImage(NSString *path){
+    BOOL isOK = NO;
+    NSURL *url = [NSURL fileURLWithPath:path];
+    NSString *exten = url.pathExtension;
+    CFStringRef uti = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, (CFStringRef)exten, nil);
+    if (uti) {
+        isOK = UTTypeConformsTo(uti, kUTTypeImage);
+        CFRelease(uti);
+    }
+    return isOK;
 }
 
 @implementation GameView {
@@ -198,9 +198,6 @@ static NSString *UTI(NSString *path){
             // borrowed code here
             NSDirectoryEnumerator *picturesFolderEnum;
             NSString *relativeFilePath,*fullPath;
-            // grab all picture formats NSImage knows about - we'll assume that if we can read them,
-            // we can set them to be the desktop picture
-            NSArray *imageFormats=[NSImage imageTypes];
 
             if (backgroundImagePathArray)
                 [backgroundImagePathArray autorelease];
@@ -221,8 +218,7 @@ static NSString *UTI(NSString *path){
                 // then we're good to go, and we add a new menu item, using the display name
                 // (which may have a hidden extension) for the menu item's title and passing
                 // the full path to the picture to store with the menu item
-                if ([imageFormats containsObject:[relativeFilePath pathExtension]] ||
-                    [imageFormats containsObject:UTI(fullPath)])
+                if (IsImage(relativeFilePath))
                 {
                     [backgroundImagePathArray addObject:fullPath];
                 }

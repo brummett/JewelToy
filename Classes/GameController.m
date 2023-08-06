@@ -202,6 +202,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
           urlS = [@"~" stringByAppendingString:[urlS substringFromIndex:[homeUrlS length]]];
         }
         [prefsCustomBackgroundFolderTextField setStringValue:urlS];
+        customBackgroundFolderPath = urlS;
       }
     }];
     // get a sheet going to let the user pick a folder to scan for pictures
