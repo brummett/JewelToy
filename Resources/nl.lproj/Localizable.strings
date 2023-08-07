@@ -1,0 +1,16 @@
+/* Dutch versions of strings used internally */
+
+NoMoreMovesHTML = "<H1><FONT COLOR=#FF0000>Geen bewegingen meer!</FONT></H1>";
+JewelToyStartHTML = "<H1><FONT COLOR=#FFCC00>JewelToy</FONT><FONT COLOR=#FF0000><SMALL>&copy;2001</SMALL></FONT></H1></CENTER>";
+GameOverHTML = "<H1><FONT COLOR=#FF0000>Spel gedaan !</FONT></H1>";
+EasyHighScoresHTML = "<H1><FONT COLOR=#00FF00>Gemakkelijke Hoge Score</FONT></H1>";
+HardHighScoresHTML = "<H1><FONT COLOR=#FFFF00>Moeilijke Hoge Score</FONT></H1>";
+ToughHighScoresHTML = "<H1><FONT COLOR=#FF0000>Moeilijkste Hoge Score</FONT></H1>";
+FreePlayHighScoresHTML = "<H1><FONT COLOR=#FF00FF>Gratis Spel Hoge Score</FONT></H1>";
+AnonymousName = "anoniem";
+PauseGameMenuItemTitle = "Pauseer Spel";
+ContinueGameMenuItemTitle = "Vervolg Spel";
+MuteGameMenuItemTitle = "Geen geluid";
+UnMuteGameMenuItemTitle = "Geluid";
+PausedHTML = "<H1><FONT COLOR=#FF0000>Onderbroken</FONT></H1>";
+PicturesFolderPath = "~";
